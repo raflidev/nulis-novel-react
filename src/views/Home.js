@@ -56,10 +56,10 @@ function Home() {
             mungkin kamu akan suka dengan novel-novel berikut
           </p>
         </div>
-        <div className="px-36 flex justify-around font-montserrat">
+        <div className="mt-20 px-32 flex space-x-9 justify-center font-montserrat">
           <div>
             <img
-              className="h-80 w-56"
+              className="h-80 w-56 rounded-sm"
               src="https://static.zerochan.net/Sailor.Moon.%28Character%29.full.3155634.jpg"
               alt="mamang punk"
             />
@@ -67,10 +67,11 @@ function Home() {
               <h2 className="font-bold text-lg">Maling Kundang 2077</h2>
               <p className="font-medium text-sm">Mamang udin</p>
             </div>
+            <button className="text-sm p-1 rounded bg-gray-400">fiksi</button>
           </div>
           <div>
             <img
-              className="h-80 w-56"
+              className="h-80 w-56 rounded-sm"
               src="https://static.zerochan.net/Sailor.Moon.%28Character%29.full.3155634.jpg"
               alt="mamang punk"
             />
@@ -78,11 +79,11 @@ function Home() {
               <h2 className="font-bold text-lg">Maling Kundang 2077</h2>
               <p className="font-medium text-sm">Mamang udin</p>
             </div>
-            {/* <div className="text-sm p-1 rounded bg-gray-400">fiksi</div> */}
+            <button className="text-sm p-1 rounded bg-gray-400">fiksi</button>
           </div>
           <div>
             <img
-              className="h-80 w-56"
+              className="h-80 w-56 rounded-sm"
               src="https://static.zerochan.net/Sailor.Moon.%28Character%29.full.3155634.jpg"
               alt="mamang punk"
             />
@@ -90,11 +91,11 @@ function Home() {
               <h2 className="font-bold text-lg">Maling Kundang 2077</h2>
               <p className="font-medium text-sm">Mamang udin</p>
             </div>
-            {/* <div className="text-sm p-1 rounded bg-gray-400">fiksi</div> */}
+            <button className="text-sm p-1 rounded bg-gray-400">fiksi</button>
           </div>
           <div>
             <img
-              className="h-80 w-56"
+              className="h-80 w-56 rounded-sm"
               src="https://static.zerochan.net/Sailor.Moon.%28Character%29.full.3155634.jpg"
               alt="mamang punk"
             />
@@ -102,7 +103,65 @@ function Home() {
               <h2 className="font-bold text-lg">Maling Kundang 2077</h2>
               <p className="font-medium text-sm">Mamang udin</p>
             </div>
-            {/* <div className="text-sm p-1 rounded bg-gray-400">fiksi</div> */}
+            <button className="text-sm p-1 rounded bg-gray-400">fiksi</button>
+          </div>
+        </div>
+      </section>
+      <section className="mt-20">
+        <div className="font-montserrat text-center">
+          <h1 className="font-extrabold text-4xl">Artikel</h1>
+          <p className="text-lg">
+            Artikel tips dan trik dari kami
+          </p>
+        </div>
+        <div className="mt-20 px-32 flex space-x-9 justify-center font-montserrat">
+          <div>
+            <img
+              className="h-80 w-56 rounded-sm"
+              src="https://static.zerochan.net/Sailor.Moon.%28Character%29.full.3155634.jpg"
+              alt="mamang punk"
+            />
+            <div className="max-w-56">
+              <h2 className="font-bold text-lg">Maling Kundang 2077</h2>
+              <p className="font-medium text-sm">Mamang udin</p>
+            </div>
+            <button className="text-sm p-1 rounded bg-gray-400">fiksi</button>
+          </div>
+          <div>
+            <img
+              className="h-80 w-56 rounded-sm"
+              src="https://static.zerochan.net/Sailor.Moon.%28Character%29.full.3155634.jpg"
+              alt="mamang punk"
+            />
+            <div className="max-w-56">
+              <h2 className="font-bold text-lg">Maling Kundang 2077</h2>
+              <p className="font-medium text-sm">Mamang udin</p>
+            </div>
+            <button className="text-sm p-1 rounded bg-gray-400">fiksi</button>
+          </div>
+          <div>
+            <img
+              className="h-80 w-56 rounded-sm"
+              src="https://static.zerochan.net/Sailor.Moon.%28Character%29.full.3155634.jpg"
+              alt="mamang punk"
+            />
+            <div className="max-w-56">
+              <h2 className="font-bold text-lg">Maling Kundang 2077</h2>
+              <p className="font-medium text-sm">Mamang udin</p>
+            </div>
+            <button className="text-sm p-1 rounded bg-gray-400">fiksi</button>
+          </div>
+          <div>
+            <img
+              className="h-80 w-56 rounded-sm"
+              src="https://static.zerochan.net/Sailor.Moon.%28Character%29.full.3155634.jpg"
+              alt="mamang punk"
+            />
+            <div className="max-w-56">
+              <h2 className="font-bold text-lg">Maling Kundang 2077</h2>
+              <p className="font-medium text-sm">Mamang udin</p>
+            </div>
+            <button className="text-sm p-1 rounded bg-gray-400">fiksi</button>
           </div>
         </div>
       </section>
