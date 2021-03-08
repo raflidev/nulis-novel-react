@@ -6,7 +6,7 @@ import plantLeft from "../assets/plant-left.png";
 import topLeaves from "../assets/top-leaves.png";
 
 // Component
-import { PopulerNovel, HighlightArticle } from "../components";
+import { PopulerNovel, HighlightArticle, TheFooter } from "../components";
 
 function Home() {
   return (
@@ -19,14 +19,14 @@ function Home() {
                 NulisNovel
               </Link>
               <div className="2xl:pl-96 xl:pl-72 lg:pl-10 pl-92 lg:ml-32 ml-96 space-x-12 font-bold text-white">
-                <Link to="/">Populer</Link>
-                <Link to="/">Artikel</Link>
-                <Link to="/">Review</Link>
+                <a href="#populer">Populer</a>
+                <a href="#artikel">Artikel</a>
+                <a href="#review">Review</a>
               </div>
               <div className="space-x-12 font-bold text-white">
                 <Link to="/">Masuk</Link>
                 <Link
-                  to="/"
+                  to="/daftar"
                   className="py-3 px-4 rounded bg-yellow-500 hover:ring-4 hover:ring-yellow-300 hover:ring-opacity-50"
                 >
                   Daftar
@@ -55,7 +55,7 @@ function Home() {
           />
         </div>
       </section>
-      <section className="mt-64">
+      <section id="populer" className="mt-64">
         <div className="font-montserrat text-center">
           <h1 className="font-extrabold text-4xl">Novel Populer</h1>
           <p className="text-lg">
@@ -69,7 +69,7 @@ function Home() {
           <PopulerNovel />
         </div>
       </section>
-      <section className="mt-36">
+      <section id="artikel" className="mt-36">
         <div className="font-montserrat text-center">
           <h1 className="font-extrabold text-4xl">Artikel</h1>
           <p className="text-lg">Artikel tips dan trik dari kami</p>
@@ -80,7 +80,7 @@ function Home() {
           <HighlightArticle />
         </div>
       </section>
-      <section className="mt-36">
+      <section id="review" className="mt-36">
         <div className="font-montserrat text-center">
           <h1 className="font-extrabold text-4xl">Feedback</h1>
           <p className="text-lg">
@@ -121,7 +121,7 @@ function Home() {
           <div className="font-bold text-2xl text-white">
             Tertarik Menjadi Penulis?
           </div>
-          <button className="px-8 py-2 mt-3 font-bold text-white bg-yellow-500 ">
+          <button className="px-8 py-2 mt-3 font-bold text-white bg-yellow-500 rounded shadow-md ">
             Mulai Menulis
           </button>
           <img
@@ -138,14 +138,7 @@ function Home() {
           />
         </div>
       </section>
-      <section>
-        <div className="font-montserrat text-center w-full flex justify-around items-center bg-red-500 h-64">
-          <div className="font-bold text-2xl text-white">NulisNovel</div>
-          <button className="px-8 py-2 mt-3 font-bold text-white bg-yellow-500 ">
-            Mulai Menulis
-          </button>
-        </div>
-      </section>
+      <TheFooter />
     </div>
   );
 }
