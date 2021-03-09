@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import glogo from "../assets/g-logo.png";
 import flogo from "../assets/fb-logo.png";
 function Masuk() {
@@ -9,7 +10,7 @@ function Masuk() {
           <h1 className="font-black text-3xl text-center pb-0 p-4 px-3">
             Masuk dulu yuk!
           </h1>
-          <p className="text-center ">
+          <p className="text-center px-10">
             Dengan masuk kamu bisa membuat novel dan memberi dukungan kepada
             pembuat novel lho!
           </p>
@@ -34,9 +35,9 @@ function Masuk() {
                   type="password"
                 />
               </div>
-              <a href="#" className="font-medium text-sm text-right">
+              <Link to="#" className="font-medium text-sm text-right">
                 Forgot Password?
-              </a>
+              </Link>
               <button className="rounded-full font-black text-white bg-yellow-600 p-3">
                 Daftar Sekarang
               </button>

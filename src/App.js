@@ -4,6 +4,9 @@ import "./App.css";
 import Home from "./views/Home";
 import Daftar from "./views/Daftar";
 import Masuk from "./views/Masuk";
+import Comingsoon from "./views/Comingsoon";
+import NovelPage from "./views/NovelPage";
+import ChapterPage from "./views/ChapterPage";
 
 function App() {
   return (
@@ -12,6 +15,9 @@ function App() {
         <Route path="/" exact component={Home} />
         <Route path="/daftar" exact component={Daftar} />
         <Route path="/masuk" exact component={Masuk} />
+        <Route path="/novel" exact component={NovelPage} />
+        <Route path="/novel/chapter/1" exact component={ChapterPage} />
+        <Route exact component={Comingsoon} />
       </Switch>
     </BrowserRouter>
   );

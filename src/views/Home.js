@@ -1,5 +1,6 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link as Linkto } from "react-router-dom";
+import { Link } from "react-scroll";
 import vectorBg from "../assets/vector-bg.png";
 import IlusLanding from "../assets/Ilustration-landing.png";
 import plantLeft from "../assets/plant-left.png";
@@ -10,27 +11,56 @@ import { PopulerNovel, HighlightArticle, TheFooter } from "../components";
 
 function Home() {
   return (
-    <div>
+    <div className="cursor-default">
       <section>
         <div className="container mx-auto static">
-          <nav className="relative z-10">
+          <nav className="z-10 relative">
             <div className="flex items-center justify-between p-6 font-montserrat">
-              <Link to="/" className="font-bold">
+              <Linkto to="/" className="font-bold">
                 NulisNovel
-              </Link>
+              </Linkto>
               <div className="2xl:pl-96 xl:pl-72 lg:pl-10 pl-92 lg:ml-32 ml-96 space-x-12 font-bold text-white">
-                <a href="#populer">Populer</a>
-                <a href="#artikel">Artikel</a>
-                <a href="#review">Review</a>
+                <Link
+                  className="hover:underline hover:text-yellow-400 cursor-pointer"
+                  smooth={true}
+                  offset={-70}
+                  duration={1000}
+                  to="populer"
+                >
+                  Populer
+                </Link>
+                <Link
+                  className="hover:underline hover:text-yellow-400 cursor-pointer"
+                  smooth={true}
+                  offset={-100}
+                  duration={2000}
+                  to="artikel"
+                >
+                  Artikel
+                </Link>
+                <Link
+                  className="hover:underline hover:text-yellow-400 cursor-pointer"
+                  smooth={true}
+                  offset={-100}
+                  duration={3000}
+                  to="review"
+                >
+                  Review
+                </Link>
               </div>
               <div className="space-x-12 font-bold text-white">
-                <Link to="/">Masuk</Link>
-                <Link
+                <Linkto
+                  className="hover:underline hover:text-yellow-400"
+                  to="/masuk"
+                >
+                  Masuk
+                </Linkto>
+                <Linkto
                   to="/daftar"
-                  className="py-3 px-4 rounded bg-yellow-500 hover:ring-4 hover:ring-yellow-300 hover:ring-opacity-50"
+                  className="py-3 px-4 rounded bg-yellow-500 hover:bg-yellow-300 hover:text-gray-700 "
                 >
                   Daftar
-                </Link>
+                </Linkto>
               </div>
             </div>
           </nav>
@@ -121,9 +151,12 @@ function Home() {
           <div className="font-bold text-2xl text-white">
             Tertarik Menjadi Penulis?
           </div>
-          <button className="px-8 py-2 mt-3 font-bold text-white bg-yellow-500 rounded shadow-md ">
+          <Linkto
+            to="/daftar"
+            className="px-8 py-2 mt-3 font-bold text-white bg-yellow-500 rounded shadow-md "
+          >
             Mulai Menulis
-          </button>
+          </Linkto>
           <img
             src={plantLeft}
             className="absolute h-64 left-20"

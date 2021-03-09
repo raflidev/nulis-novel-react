@@ -9,7 +9,7 @@ function Daftar() {
           <h1 className="font-black text-3xl text-center pb-0 p-4 px-3">
             Kita Daftar Yuk!
           </h1>
-          <p className="text-center ">
+          <p className="text-center px-10">
             Dengan daftar kamu bisa membuat novel dan memberi dukungan kepada
             pembuat novel lho!
           </p>
