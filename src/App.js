@@ -1,4 +1,12 @@
-import { BrowserRouter, Route, Switch } from "react-router-dom";
+import React, { useEffect } from 'react'
+import {
+  BrowserRouter,
+  Switch,
+  Route,
+  useLocation,
+  withRouter,
+} from 'react-router-dom'
+
 import "./App.css";
 
 import Home from "./views/Home";
@@ -10,8 +18,17 @@ import ChapterPage from "./views/ChapterPage";
 import BlogPage from "./views/BlogPage";
 
 function App() {
+  function _ScrollToTop(props) {
+    const { pathname } = useLocation()
+    useEffect(() => {
+      window.scrollTo(0, 0)
+    }, [pathname])
+    return props.children
+  }
+  const ScrollToTop = withRouter(_ScrollToTop)
   return (
     <BrowserRouter>
+    <ScrollToTop>
       <Switch>
         <Route path="/" exact component={Home} />
         <Route path="/daftar" exact component={Daftar} />
@@ -21,6 +38,8 @@ function App() {
         <Route path="/blog/1" exact component={BlogPage} />
         <Route exact component={Comingsoon} />
       </Switch>
+
+      </ScrollToTop>
     </BrowserRouter>
   );
 }
