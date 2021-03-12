@@ -7,6 +7,7 @@ import Masuk from "./views/Masuk";
 import Comingsoon from "./views/Comingsoon";
 import NovelPage from "./views/NovelPage";
 import ChapterPage from "./views/ChapterPage";
+import BlogPage from "./views/BlogPage";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path="/masuk" exact component={Masuk} />
         <Route path="/novel" exact component={NovelPage} />
         <Route path="/novel/chapter/1" exact component={ChapterPage} />
+        <Route path="/blog/1" exact component={BlogPage} />
         <Route exact component={Comingsoon} />
       </Switch>
     </BrowserRouter>
